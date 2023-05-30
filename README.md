@@ -1,4 +1,4 @@
-# Feuerteufel Logic
+# Feuerteufel
 ###### RedTeam Script Examples (EDU) by Mr.Chess - simple codings for 'Offensive Security' (updated 5/2023)
 
 A creative small Python script that intercepts API requests and, when accessed through the Tor network, loads and runs an external script from a specified URL to Fuck them!
