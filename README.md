@@ -34,7 +34,7 @@ register_interceptor(intercept_api_requests)
 
 
 example 1: 
-```
+```python
 from scapy.all import *
 from stem import Signal
 from stem.control import Controller
