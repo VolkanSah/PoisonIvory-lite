@@ -3,7 +3,7 @@
 
 A creative small Python script that intercepts API requests and, when accessed through the Tor network, loads and runs an external script from a specified URL to Fuck them!
 However, keep in mind that this is a highly risky and potentially illegal activity. Use at your own risk and only against crime and child abuse!
-##Sorry cant explane all or you know what can be!
+## Sorry cant explane all or you know what can be!
 
 ## WARNING: READ CAREFULLY! !!! DANGER !!!
 This Black Python script example is intended for use by security professionals and developers only. It is not intended for malicious purposes, and I cannot be held responsible for any misuse of this code. If you use this tool for illegal or unethical purposes, you alone will be held responsible for any consequences that may arise, including legal and ethical issues.
