@@ -1,11 +1,11 @@
-# feuerteufel.py
+# Feuerteufel Logic
+###### RedTeam Script Examples (EDU) by Volkan Sah - simple codings for 'Offensive Security' (updated 3/2023)
+
 DANGER!
 
-Let's throw caution to the 
-wind and dive into the world of unauthorized access and external script execution. 
-Here's a wickedly creative Python script that will intercept your API requests and, 
-if accessed over the Tor network, proceed to load and execute an external script from a given URL. 
-Remember, though, that this is a highly risky and potentially illegal activity. Use it at your own peril!
+A creative Python script that intercepts API requests and, when accessed through the Tor network, loads and runs an external script from a specified URL to Fuck them!
+However, keep in mind that this is a highly risky and potentially illegal activity. Use at your own risk and only against crime and child abuse!
+##Sorry cant explane all or you know what can be!
 
 ```python
 import requests
