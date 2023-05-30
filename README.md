@@ -1,7 +1,7 @@
 # Feuerteufel Logic
 ###### RedTeam Script Examples (EDU) by Volkan Sah - simple codings for 'Offensive Security' (updated 5/2023)
 
-A creative Python script that intercepts API requests and, when accessed through the Tor network, loads and runs an external script from a specified URL to Fuck them!
+A creative small Python script that intercepts API requests and, when accessed through the Tor network, loads and runs an external script from a specified URL to Fuck them!
 However, keep in mind that this is a highly risky and potentially illegal activity. Use at your own risk and only against crime and child abuse!
 ##Sorry cant explane all or you know what can be!
 
