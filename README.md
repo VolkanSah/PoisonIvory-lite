@@ -12,7 +12,7 @@ This script monitors and intercepts Tor traffic to detect and handle malicious a
 - Monitors and intercepts Tor traffic in real-time.
 - Detects malicious traffic based on specified keywords.
 - Executes an external script for further analysis or actions like attacks
-- Excludes malicious Tor relays from the circuit.
+- Excludes Tor relays from the circuit.
 
 ## Prerequisites
 
