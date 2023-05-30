@@ -8,7 +8,9 @@ However, keep in mind that this is a highly risky and potentially illegal activi
 ## WARNING: READ CAREFULLY! !!! DANGER !!!
 This Black Python script example is intended for use by security professionals and developers only. It is not intended for malicious purposes, and I cannot be held responsible for any misuse of this code. If you use this tool for illegal or unethical purposes, you alone will be held responsible for any consequences that may arise, including legal and ethical issues.
 
-Please see [SherlocksHome](https://github.com/VolkanSah/SherlocksHome/) to custumize your logic
+Please see [SherlocksHome](https://github.com/VolkanSah/SherlocksHome/) & [This](https://github.com/VolkanSah/playing-with-scapy-and-stem)
+
+to understand logic ;)
 
 ### Be aware that attempting to bypass security measures is likely illegal and unethical!
 
