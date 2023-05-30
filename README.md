@@ -1,5 +1,6 @@
 # PoisonIvory (lite)
 ###### RedTeam Script (EDU) by Volkan Sah - simple codings for 'Offensive Security' (updated 5/2023)
+[![ChatGPT Security](pil.png)
 
 PoisonIvory (lite) is a small creative Python script that demonstrates how to intercept requests and execute additional actions when accessed through the Tor network. The script is designed to showcase the interception capability and provides a template for further customization. However, it is important to note that engaging in such activities can have serious legal and ethical implications.
 
