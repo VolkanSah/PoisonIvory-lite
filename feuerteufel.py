@@ -23,7 +23,7 @@ class MaliciousTrafficListener(StreamListener):
 # Register the Stream Listener
 with Controller.from_port(port=9051) as controller:
     controller.authenticate()
-    listener = MaliciousTrafficListener(["bad", "badsite"])
+    listener = MaliciousTrafficListener(["abuse", "child"])
     controller.add_event_listener(listener)
 
     input("Press Enter to exit")
