@@ -39,7 +39,7 @@ This script monitors and intercepts Tor traffic to detect and handle malicious a
 3. Run the script and observe the output for detected malicious traffic.
 4. Customize the `intercept_api_requests` function to handle intercepted API requests.
 5. Adjust the local address or URL of the external script as needed.
-6. Execute the `exclude_malicious_relays` function to add malicious relays to the circuit blacklist.
+6. Execute the `exclude_malicious_relays` function to add malicious relays to the circuit blacklist or create a whitelist with it 😅
 
 ## Important Note
 
