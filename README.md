@@ -33,7 +33,7 @@ register_interceptor(intercept_api_requests)
 ```
 
 
-example 1: 
+Example:
 ```python
 from scapy.all import *
 from stem import Signal
