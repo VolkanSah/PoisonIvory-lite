@@ -1,6 +1,88 @@
 # Feuerteufel
 ###### RedTeam Script Examples (EDU) by Mr.Chess - simple codings for 'Offensive Security' (updated 5/2023)
 
+# Tor Traffic Monitoring Script
+
+This script monitors and intercepts Tor traffic to detect and handle malicious activity. It utilizes the Scapy and Stem libraries to analyze network packets and interact with the Tor network.
+
+## Features
+
+- Monitors and intercepts Tor traffic in real-time.
+- Detects malicious traffic based on specified keywords.
+- Executes an external script for further analysis or actions like attacks
+- Excludes malicious Tor relays from the circuit.
+
+## Prerequisites
+
+- Python 3.x
+- Scapy library (`pip install scapy`)
+- Stem library (`pip install stem`)
+
+## Usage
+
+1. Set the desired `.onion` address to monitor in the `onion_address` variable.
+2. Customize the keywords for detecting malicious traffic in the `MaliciousTrafficListener` class.
+3. Run the script and observe the output for detected malicious traffic.
+4. Customize the `intercept_api_requests` function to handle intercepted API requests.
+5. Adjust the local address or URL of the external script as needed.
+6. Execute the `exclude_malicious_relays` function to add malicious relays to the circuit blacklist.
+
+## Important Note
+
+Executing code fetched from the internet or local sources can be risky. 
+Ensure that you trust the source and contents of the external script before loading and executing it.
+
+## License
+
+[MIT License](LICENSE)
+
+## Acknowledgements
+
+- This script utilizes the Scapy and Stem libraries.
+- Thanks to the open-source community for their contributions.
+
+## Contact
+
+For any questions or feedback, please contact:
+
+Your Name
+Email: your-email@example.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 A creative small Python script that intercepts API requests and, when accessed through the Tor network, loads and runs an external script from a specified URL to Fuck them!
 However, keep in mind that this is a highly risky and potentially illegal activity. Use at your own risk and only against crime and child abuse!
 ## Sorry cant explane all or you know what can be!
