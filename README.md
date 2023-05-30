@@ -29,3 +29,12 @@ def check_if_accessed_over_tor(request):
 # Register the interceptor function to intercept API requests
 register_interceptor(intercept_api_requests)
 ```
+
+## issues
+Issues to this script are not accepted as it is intended for educational purposes only and not for production use.
+
+### Thank you for your support!
+- If you appreciate my work, please consider [becoming a 'Sponsor'](https://github.com/sponsors/volkansah), giving a :star: to my projects, or following me. 
+### Copyright
+- [VolkanSah on Github](https://github.com/volkansah)
+- [Developer Site](https://volkansah.github.io)
