@@ -1,5 +1,5 @@
 # Feuerteufel Logic
-###### RedTeam Script Examples (EDU) by Volkan Sah - simple codings for 'Offensive Security' (updated 3/2023)
+###### RedTeam Script Examples (EDU) by Volkan Sah - simple codings for 'Offensive Security' (updated 5/2023)
 
 DANGER!
 
