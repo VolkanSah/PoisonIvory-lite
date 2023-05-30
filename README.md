@@ -34,7 +34,7 @@ This script monitors and intercepts Tor traffic to detect and handle malicious a
 Please read the following warnings and considerations carefully before proceeding:
 - Legal Compliance: Interfering with network traffic and executing external scripts without proper authorization can be illegal in many jurisdictions. Ensure that you fully understand and comply with the laws and regulations of your country or region before using this script.
 - Ethical Responsibility: Respect the privacy and security of others. Do not use this script for malicious purposes, personal gain, or any activity that could cause harm or violate the rights of individuals or organizations. It is crucial to conduct ethical testing and obtain appropriate consent before performing any actions that may impact systems or networks.
-- Personal Liability: The author of this script cannot be held responsible for any misuse, damages, legal issues, or consequences resulting from the use of this script. By using InterceptAPI, you assume full responsibility for your actions and any outcomes that may arise.
+- Personal Liability: The author of this script cannot be held responsible for any misuse, damages, legal issues, or consequences resulting from the use of this script. By using PoisonIvory (lite), you assume full responsibility for your actions and any outcomes that may arise.
 ## Notes
 - This script is intended for educational and informational purposes only. It serves as a starting point for understanding API interception techniques and should be used responsibly and legally.
 - Executing code fetched from the internet or local sources can be risky. 
