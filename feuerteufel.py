@@ -29,6 +29,15 @@ with Controller.from_port(port=9051) as controller:
     input("Press Enter to exit")
 
 def check_if_tor_traffic(packet):
+    """
+    Check if the packet belongs to Tor traffic.
+
+    Args:
+        packet: The packet to be checked.
+
+    Returns:
+        True if the packet belongs to Tor traffic, False otherwise.
+    """
     if packet.haslayer(TCP) and packet[TCP].dport == 443:
         with Controller.from_port(port=9051) as controller:
             controller.authenticate()
@@ -37,6 +46,12 @@ def check_if_tor_traffic(packet):
     return False
 
 def intercept_api_requests(request):
+    """
+    Intercept API requests and execute an external script.
+
+    Args:
+        request: The intercepted API request.
+    """
     if sniff_packets():
         # This is where you would load and execute your external script.
         # Remember that executing code fetched from the internet can be risky.
@@ -48,12 +63,23 @@ def intercept_api_requests(request):
             print("Failed to load the external script.")
 
 def sniff_packets():
+    """
+    Sniff packets and filter for Tor traffic.
+
+    Returns:
+        The sniffed packets.
+    """
     packets = sniff(filter="tcp and (port 9050 or port 9051)", prn=check_if_tor_traffic)
 
     return packets
 
-# Get the current circuit and its hops
 def get_circuit_hops():
+    """
+    Get the current circuit and its hops.
+
+    Returns:
+        The circuit hops.
+    """
     with Controller.from_port(port=9051) as controller:
         controller.authenticate()
         circuit_id = controller.get_circuit_id()
@@ -61,8 +87,10 @@ def get_circuit_hops():
 
     return hops
 
-# Add malicious relays to circuit blacklist
 def exclude_malicious_relays():
+    """
+    Add malicious relays to the circuit blacklist.
+    """
     hops = get_circuit_hops()
     malicious_relays = ["FINGERPRINT1", "FINGERPRINT2"]  # Add the fingerprints of malicious relays
 
