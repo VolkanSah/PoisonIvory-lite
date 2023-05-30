@@ -10,6 +10,8 @@ This Black Python script example is intended for use by security professionals a
 
 Please see [SherlocksHome](https://github.com/VolkanSah/SherlocksHome/) to custumize your logic
 
+## Be aware that attempting to bypass security measures is likely illegal and unethical
+
 ```python
 import requests
 
@@ -25,7 +27,6 @@ def intercept_api_requests(request):
 def check_if_accessed_over_tor(request):
     # Implement your logic to detect if the request is coming from the Tor network
     # This might involve inspecting the request headers or analyzing network traffic
-    # Be aware that attempting to bypass security measures is likely illegal and unethical
 
 # Register the interceptor function to intercept API requests
 register_interceptor(intercept_api_requests)
