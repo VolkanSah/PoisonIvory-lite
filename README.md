@@ -10,7 +10,7 @@ This Black Python script example is intended for use by security professionals a
 
 Please see [SherlocksHome](https://github.com/VolkanSah/SherlocksHome/) to custumize your logic
 
-## Be aware that attempting to bypass security measures is likely illegal and unethical
+### Be aware that attempting to bypass security measures is likely illegal and unethical!
 
 ```python
 import requests
