@@ -7,6 +7,8 @@ A creative Python script that intercepts API requests and, when accessed through
 However, keep in mind that this is a highly risky and potentially illegal activity. Use at your own risk and only against crime and child abuse!
 ##Sorry cant explane all or you know what can be!
 
+Please see [SherlocksHome](https://github.com/VolkanSah/SherlocksHome/) to custumize your logic
+
 ```python
 import requests
 
