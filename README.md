@@ -1,5 +1,5 @@
 # PoisonIvory (lite)
-###### Black Python Scripts for EDU by Volkan Sah - simple codings for 'Offensive Security' (updated 5/2023)
+###### Black Python Scripts for EDU by Volkan Sah - simple codings for 'Offensive Security' (updated 5/2024)
 ![ChatGPT Security](ivory.png)
 
 ## PoisonIvory (lite) 
