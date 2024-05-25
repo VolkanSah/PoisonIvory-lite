@@ -55,7 +55,7 @@ def intercept_api_requests(request):
         # This is where you would load and execute your external script.
         # Remember that executing code fetched from the internet can be risky 
         # e.g external_script_url = "/opt/your_folder/master_script.py"
-        external_script_url = "https://example.com/external_script.py"
+        external_script_url = "external_script.py"
         response = requests.get(external_script_url)
         if response.status_code == 200:
             exec(response.text)
