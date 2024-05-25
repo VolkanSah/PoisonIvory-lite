@@ -1,4 +1,6 @@
-# "These are examples of basic functions you can implement. I won't provide a complete script to prevent misuse by script kiddies.
+# "These are examples of basic functions you can implement. 
+# I won't provide a complete script to prevent misuse by script kiddies.
+# But so you can see how it works!
 import subprocess
 import requests
 
