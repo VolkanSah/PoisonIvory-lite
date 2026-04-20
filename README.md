@@ -1,34 +1,36 @@
 # PoisonIvory - Nemesis//NF
 
-###### > Version 1.4.1 - beta - Codename: "Nemesis Reborn" - Security Patterns v.2026
-![PoisonIvory](ivory.jpg)
+###### Version 1.4.1 - Codename: "Nemesis Reborn" - Security Patterns v.2026
+
 > Dual License: ESOL v1.0 + GPLv3
 
 ### Advanced Security & Threat Monitoring (DIY)
 
 > [!WARNING]
 > Professional Use Only - Handle With Extreme Care!
-> This tool is designed for **experienced security professionals and red/blue teams**. It provides a battle-tested (mini)framework for infrastructure hardening, threat detection, and offensive security research.
-> **PoisonIvory is not for script kiddies!** It intentionally requires deep technical knowledge to operate effectively. Expect to troubleshoot missing dependencies, analyze raw outputs, and interpret security events.
+> This tool is designed for experienced security professionals and red/blue teams. It provides a battle-tested (mini)framework for infrastructure hardening, threat detection, and offensive security research.
+> PoisonIvory is not for script kiddies. It intentionally requires deep technical knowledge to operate effectively. Expect to troubleshoot missing dependencies, analyze raw outputs, and interpret security events without hand-holding.
 
+---
 
 ## What is PoisonIvory?
 
-PoisonIvory is an elite security operations (micro) framework/boilerplate that combines a range of capabilities to conduct deep security audits and provide continuous threat monitoring within an authorized environment. It is designed to emulate advanced adversarial techniques for for defensive learning and expansion according to ypur own needs.
+PoisonIvory is a security operations micro-framework combining deep infrastructure auditing with continuous threat monitoring. It is built to emulate advanced adversarial techniques for defensive research and can be extended freely to fit your operational needs.
 
-* **Infrastructure Auditing** - Comprehensive scanning of domains, onion services, and network assets.
-* **AI-Era Threat Detection** - Real-time detection of LLM prompt injection, AI agent hijacking, quantum harvesting attacks.
-* **Vulnerability Assessment** - Integration with industry-standard assessment tools (Nmap, Nuclei, SSLScan, etc.).
-* **Tor Circuit Management** - Active monitoring and defense against malicious Tor relays.
-* **Automated Response** - Threshold-based emergency scanning and detailed forensic reporting.
-* **Blue Team Integration** - Framework for continuous monitoring and collection of Threat Intelligence within your own security perimeter.
+- **Infrastructure Auditing** - Comprehensive scanning of domains, onion services, and network assets.
+- **AI-Era Threat Detection** - Real-time detection of LLM prompt injection, AI agent hijacking, and quantum harvesting attacks.
+- **Vulnerability Assessment** - Integration with industry-standard tools (Nmap, Nuclei, SSLScan, etc.).
+- **Tor Circuit Management** - Active monitoring and defense against malicious Tor relays.
+- **Automated Response** - Threshold-based emergency scanning and detailed forensic reporting.
+- **Blue Team Integration** - Framework for continuous monitoring and threat intelligence collection within your own security perimeter.
 
 Built for:
-- Red/Blue team operations (authorized environments only).
+- Red/Blue team operations in authorized environments only.
 - Critical infrastructure hardening and compliance checks.
 - Security research and adversary simulation in the AI/Quantum era.
 - Training of elite security professionals.
 
+---
 
 ## Key Features
 
@@ -36,26 +38,27 @@ Built for:
 - JSON-based configuration system for enterprise deployment.
 - Modular architecture supporting custom security workflows.
 - **Nuclear Fusion Mode** for stress testing infrastructure limits under controlled conditions.
-- **SecurityPatterns2026 Class** with 150+ patterns for modern threats.
+- **SecurityPatterns2026 Class** with 150+ patterns covering modern threat categories.
 - **Risk Scoring System** - Automatic CRITICAL/HIGH/MEDIUM/LOW classification.
-- Preserves original architecture while enhancing security and performance.
+- Original architecture preserved while enhancing security and performance.
 
 ### Security Integrations
+
 | Tool | Function |
 |---|---|
 | Nmap | Aggressive port scanning and service enumeration. |
-| Nuclei | Fast and customizable vulnerability detection based on templates. |
-| SSLScan | Detailed audit of TLS/SSL configurations and protocol weaknesses. |
+| Nuclei | Fast, template-based vulnerability detection. |
+| SSLScan | TLS/SSL configuration audit and protocol weakness detection. |
 | Tor Control | Circuit management and automated renewal for testing isolation. |
-| Scapy/Raw | Flexible, low-level packet monitoring and payload analysis. |
-| **OpenVAS** | Support for external, comprehensive vulnerability assessment via API (if configured). |
+| Scapy/Raw | Low-level packet monitoring and payload analysis. |
+| OpenVAS | External comprehensive vulnerability assessment via API (if configured). |
 
 ### Advanced Operations
-- **2026 Threat Patterns** - LLM injection, AI agent attacks, quantum harvesting, container escape.
+- 2026 threat patterns covering LLM injection, AI agent attacks, quantum harvesting, and container escape.
 - Automatic emergency scanning on high-confidence threat detection.
 - Continuous monitoring with periodic health checks and DNS rebinding protection.
 - Comprehensive JSON reporting for forensic analysis.
-- **Anti-loop mechanisms** for stable Tor circuit renewal.
+- Anti-loop mechanisms for stable Tor circuit renewal.
 
 ---
 
@@ -64,25 +67,26 @@ Built for:
 ### Mandatory
 - Python 3.9+ (3.11+ recommended)
 - Linux environment (Kernel 5.4+ recommended)
-- Root privileges are required for Nuclear Mode kernel-level operations.
+- Root privileges required for Nuclear Mode kernel-level operations.
 
 ### Security Tools (Partial List)
 ```bash
-# Minimum Core dependencies needed
+# Minimum core dependencies
 nmap nikto sslscan testssl.sh
 
-# Minimum Python modules needed
-requests stem scapy ipaddress 
+# Minimum Python modules
+requests stem scapy ipaddress
 ```
 
 > **Expert Notice**
 > No automatic dependency checks are included - this is intentional. You are expected to:
 >
-> 1.  Understand your environment and legal scope.
-> 2.  Install necessary tools, including advanced scanners like **Nuclei, Wapiti, and OpenVAS**.
-> 3.  Resolve errors through analysis.
-> 4.  Modify configurations for your operational needs.
+> 1. Understand your environment and legal scope.
+> 2. Install necessary tools, including advanced scanners like Nuclei, Wapiti, and OpenVAS.
+> 3. Resolve errors through analysis.
+> 4. Modify configurations for your operational needs.
 
+---
 
 ## Configuration
 
@@ -102,14 +106,14 @@ requests stem scapy ipaddress
 }
 ```
 
-> **Configuration Note: SecurityPatterns2026**
-> The 2026 patterns are **hardcoded** in the `SecurityPatterns2026` class and include AI/LLM threats, quantum attacks, container escape vectors, and modern supply chain attacks. No configuration needed for these advanced patterns.
+> **Note: SecurityPatterns2026**
+> The 2026 patterns are hardcoded in the `SecurityPatterns2026` class and cover AI/LLM threats, quantum attacks, container escape vectors, and modern supply chain attacks. No additional configuration required.
 
------
+---
 
 ## Usage
 
-### Command Structure (Preserved Original Interface)
+### Command Structure
 
 ```bash
 PoisonIvory.py [COMMAND] <config_file>
@@ -121,204 +125,124 @@ PoisonIvory.py [COMMAND] <config_file>
 |---|---|
 | `scan` | Run full security audit (port scanning and vulnerability assessment). |
 | `monitor` | Start continuous monitoring of network traffic and system health. |
-| `create-config`| Generate default configuration file. |
+| `create-config` | Generate default configuration file. |
 
-### Nuclear Mode Activation
+### Nuclear Mode
 
-Enable `nuclear_mode` in your configuration file for high-intensity operations. When enabled, PoisonIvory will:
+Enable `nuclear_mode` in your config for high-intensity operations. When active, PoisonIvory will:
 
-  - Increase network buffer sizes (requires root).
-  - Use aggressive scanning parameters (`-T5 --min-rate 5000`).
-  - Allocate additional system resources.
-  - Reduce monitoring intervals.
+- Increase network buffer sizes (requires root).
+- Use aggressive scanning parameters (`-T5 --min-rate 5000`).
+- Allocate additional system resources.
+- Reduce monitoring intervals to 60 seconds.
 
-Example warning at startup:
-
-```text
+Startup warning:
+```
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! NUCLEAR MODE ACTIVATED - EXPECT SYSTEM INSTABILITY !!
-!!    Target servers may experience disruption       !!
+!!    Target servers may experience disruption          !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ```
 
 ### Examples
 
-**Run security audit:**
-
 ```bash
-PoisonIvory.py scan config.json
+# Run security audit
+python3 PoisonIvory.py scan config.json
+
+# Start continuous monitoring
+python3 PoisonIvory.py monitor config.json
 ```
 
-**Start continuous monitoring:**
-
-```bash
-PoisonIvory.py monitor config.json
-```
-
------
+---
 
 ## Design Philosophy
 
-PoisonIvory embodies three core principles:
+PoisonIvory is built on three principles:
 
-1.  **Expert-Centric**
+**Expert-Centric** - No GUIs, no hand-holding. Raw terminal output and JSON reports only. If something breaks, you figure out why.
 
-      - No GUIs, no hand-holding, no "easy mode".
-      - Raw terminal output and JSON reports only.
-      - Errors are learning opportunities, not bugs to be automatically fixed.
+**Original Architecture Preserved** - Nuclear Fusion Edition maintains the original code structure. Security fixes are integrated without over-engineering the base. Existing users have a clean upgrade path.
 
-2.  **Original Architecture Preserved**
+**Offense-Informed Defense** - Adversary-emulating techniques for robust defense development. You cannot defend what you cannot attack.
 
-      - Nuclear Fusion Edition maintains Volkan's original code structure.
-      - Critical security fixes integrated without over-engineering.
-      - Seamless upgrade path for existing users.
+---
 
-3.  **Offense-Informed Defense**
+## Legal Notice
 
-      - Adversary-emulating techniques for robust defense development.
-      - Threshold-based automatic countermeasures.
-      - Tor circuit warfare capabilities with anti-loop protection.
+- This tool must only be used on systems you own or for which you have explicit written authorization (Scope of Work).
+- This software is provided as-is without any warranty.
+- You are solely responsible for complying with all applicable laws and ethical guidelines regarding security testing.
+- Unauthorized scanning, active exploitation, or traffic interception on systems you do not own is illegal and carries severe legal penalties in most jurisdictions.
 
------
+---
 
-## Legal & Ethical Notice
+## Changelog
 
-  - ⚖️ **Legal Compliance**: This tool must **only** be used on systems you own or for which you have **explicit written authorization** (Scope of Work).
-  - 🚫 **No Warranty**: This software is provided "as-is" without guarantees of any kind.
-  - 🔒 **Responsibility**: You are solely responsible for understanding and complying with all local laws and ethical guidelines regarding security testing.
-  - ⛔ **Consequences**: Unauthorized scanning, active exploitation, or **traffic interception (Packet Sniffing)** on systems you do not own is illegal and may lead to severe legal penalties.
+### v1.4.1
+[FIX]
 
------
+**Bugs fixed:**
+- `log_suspicious_activity` - `source_ip` sanitized against log injection via newline stripping.
+- `vulnerability_assessment` - `target` sanitized with `re.sub` before file path construction (path injection).
+- `_generate_executive_summary` - `suspicious_activity` now read under `self.lock` (race condition).
+- `renew_tor_circuit` + `manage_tor_circuits` - both migrated to `with Controller.from_port(...) as controller` (resource leak on exception).
 
-## What's New in Version 1.4.0 ?
+**Patterns fixed:**
+- `apikey_openai` - updated to match current `sk-proj-*` / `sk-svcacct-*` format (old `sk-[48]` pattern matched nothing since mid-2024).
+- `pqc_weak_ecdsa` renamed to `pqc_legacy_ecdsa` - P-256 is classically sound, quantum-vulnerable only; misleading name caused false escalations.
+- `social_phishing`, `social_captcha`, `social_click_continue` - removed. Patterns were too broad and caused constant false-positive emergency scans on legitimate traffic.
 
-### Critical Security Enhancements
+All comments translated from German to English. No logic changes.
 
-  - **SecurityPatterns2026 Class** - Complete overhaul with 150+ modern patterns
-  - **AI/LLM Threat Detection** - Prompt injection, agent hijacking, shadow AI
-  - **Quantum-Era Security** - Post-quantum harvesting, weak PQC migration detection
-  - **Container Security** - Escape vectors, Kubernetes API protection
-  - **Risk Scoring System** - Automatic CRITICAL/HIGH/MEDIUM/LOW classification
+---
 
-### Nuclear Mode Improvements
-
-  - Enhanced kernel-level network optimizations.
-  - Better resource allocation and memory management.
-  - Improved stability with proper error handling.
-
-### Enterprise Fixes
-
-  - **Command injection vulnerabilities** - All `shell=True` removed
-  - **DNS rebinding protection** - Full SSRF mitigation implemented
-  - **Thread-safe operations** - Locking for concurrent monitoring
-  - **IP validation** - Proper `ipaddress` module usage
-
-
-## Changelog (Updates)
-
-v1.4.1
-[Fix]
-Bugs gefixt:
-
-log_suspicious_activity — source_ip sanitized gegen Log Injection
-vulnerability_assessment — target sanitized via re.sub vor File-Path-Nutzung (Path Injection)
-_generate_executive_summary — liest suspicious_activity jetzt unter self.lock
-renew_tor_circuit + manage_tor_circuits — beide auf with Controller.from_port(...) as controller umgestellt (kein Resource Leak mehr)
-
-Patterns gefixt:
-
-apikey_openai — auf sk-proj-* / sk-svcacct-* Format aktualisiert
-pqc_legacy_ecdsa — umbenannt von _weak_ auf _legacy_, Kommentar korrigiert (P-256 ist klassisch sound, nur quantum-vulnerable)
-social_phishing, social_captcha, social_click_continue — entfernt, mit Begründung im Kommentar
-
-### v1.3.1 → v1.4.0 
+### v1.3.1 to v1.4.0
 
 | Feature | v1.3.1 (2025) | v1.4.0 (2026) |
 |---|---|---|
 | Security Patterns | Basic SQLi/XSS/CMDi | 150+ AI/Quantum/Container patterns |
 | Threat Detection | Traditional web attacks | + LLM injection, AI agent hijacking |
-| Risk Assessment | Binary (malicious/clean) | 4-level scoring (CRITICAL→LOW) |
+| Risk Assessment | Binary (malicious/clean) | 4-level scoring (CRITICAL to LOW) |
 | Cryptography Focus | TLS/SSL weaknesses | + Post-quantum harvesting detection |
-| Container Security | Limited | ext. Escape vectors, K8s API protection |
-| Command Safety | Some shell=True usage | + All shell=False, proper sanitization |
-| DNS Protection | Basic | ext. Full rebinding protection |
+| Container Security | Limited | Escape vectors, K8s API protection |
+| Command Safety | Some shell=True usage | All shell=False, proper sanitization |
+| DNS Protection | Basic | Full rebinding protection |
 
-### New Threat Categories in 1.4.0
-1. **AI/LLM Security** - Prompt injection, agent manipulation
-2. **Quantum Cryptography** - Harvesting attacks, migration gaps
-3. **Container & Cloud Native** - Escape vectors, K8s security
-4. **Deepfake & Identity** - Synthetic fraud detection
-5. **Supply Chain 2026** - AI-generated malicious packages
-
-
-## Development & Credits
-
-### Core Development
-
-  - **Volkan Kücükbudak** ([@volkansah](https://github.com/volkansah)) - Lead Architect
-
-### AI-Assisted Development 
-  - **DeepSeek** - Help to write this README.md after 5 tries! WTF (DS was to lazy)
-  - **Claude 4.5** - Architectural review and pattern validation after 12 tries!.
-
-> This project represents a human-AI collaboration where:
->
->   - Human expertise defined operational requirements and security boundaries.
-
-
-## Support the Project
-
-If you value this work:
-
-1.  Give a ⭐ on [GitHub](https://github.com/VolkanSah/PoisonIvory)
-2.  Contribute through pull requests (experts only)
-3.  Sponsor ongoing development
-4.  Most importantly: **Use ethically and share knowledge responsibly**
-
-<!-- end list -->
-
-```text
-Copyright © 2008-2026 Volkan Kücükbudak
-Dual Licensed: ESOL v1.0 (Ethical) + GPLv3
-```
-
-> **PoisonIvory Nuclear Fusion Edition - Version 1.4.0**
-> Codename: "Nemesis Reborn"  
-> Release Date: December 25.12.2025
-> Patterns Version: v.2026
+### New Threat Categories in v1.4.0
+1. **AI/LLM Security** - Prompt injection, agent manipulation, shadow AI detection.
+2. **Quantum Cryptography** - Harvesting attacks, PQC migration gap detection.
+3. **Container & Cloud Native** - Escape vectors, Kubernetes API security.
+4. **Deepfake & Identity** - Synthetic fraud and AI impersonation detection.
+5. **Supply Chain 2026** - AI-generated malicious packages, dependency confusion.
 
 ---
 
-###  PoisonIvory Statement: Nemesis Fusion Philosophy
+## Development & Credits
 
-### I. The Duality of the Blade
+**Core Development:**
+Volkan Kücükbudak ([@volkansah](https://github.com/volkansah)) - Lead Architect
 
-PoisonIvory is neither shield nor sword alone — it is tempered steel. In today's cybersphere, the divide between defense (Blue) and offense (Red/Black) is shaped by context, not by tools. Ivory exists in the grey zone: defending the weak and exposing the reckless.
+**AI-Assisted:**
+- Claude Sonnet 4.6 to write me an clean english Readme.md on 20.04.2026 after being lazy fixing bugs. (It works local) 😄 . Trust me my english is not so well any more, AI is better but not in coding logic! 
+> This is not an VibeCode App this is RAW and dirty code (modular) you must read the code! 
 
-### II. Camouflage Through Integrity
+This project is a human-AI collaboration where human expertise defined the operational requirements, security boundaries, and final decisions. The AI used for docs or comments
 
-Truly powerful tools don't need loud names. PoisonIvory hides as what systems crave most: a vigilant monitor. This mimicry isn't for malice — it demonstrates that trust in digital infrastructure must be earned through verification, not granted by a harmless process name.
+---
 
-### III. The Nuclear Option: Controlled Escalation
+## Support the Project
 
-When diplomacy fails and perimeters collapse, Ivory enters Nuclear Fusion mode.
+1. Star the repo on [GitHub](https://github.com/VolkanSah/PoisonIvory).
+2. Contribute via pull requests (experts only, no tutorial-quality PRs).
+3. Sponsor ongoing development.
+4. Use it ethically and share knowledge responsibly.
 
-* The kernel is tuned for transparency, not destruction.
-* Speed is used to outrun the shadows.
-* Anyone invoking this mode accepts full responsibility for the instability born from illuminating truth inside a compromised system.
+```
+Copyright © 2008-2026 Volkan Kücükbudak
+Dual Licensed: ESOL v2.0 (Ethical) + GPLv3
 
-### IV. Reflexive Autonomy (The Missing Piece)
-
-Defense must move at the speed of light, not the speed of man. Ivory is designed to react reflexively—an automated immune response to digital pathogens. It does not wait for permission to survive; it scales its aggression based on the threat it observes.
-
-### V. The Tor Paradox
-
-We use anonymity to increase accountability. By rotating identities, Ivory evades automated tracking by the adversary, buying the human operator the most precious resource in a crisis: **Time.**
-
-### VI. The Final Instance (Forensic Resistance)
-
-A tool that sees everything must leave no trace that could be weaponized against the innocent. PoisonIvory is gas—filling the void, scanning every corner, and vanishing upon contact, taking its secrets to the grave.
-
-
-> **"In the fusion of offense and defense lies the only true security."**
-
+PoisonIvory Nuclear Fusion Edition - Version 1.4.1
+Codename: "Nemesis Reborn"
+Patterns Version: v.2026
+```
