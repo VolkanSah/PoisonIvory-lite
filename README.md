@@ -1,6 +1,6 @@
 # PoisonIvory - Nemesis//NF
 
-###### > Version 1.4.0 - beta - Codename: "Nemesis Reborn" - Security Patterns v.2026
+###### > Version 1.4.1 - beta - Codename: "Nemesis Reborn" - Security Patterns v.2026
 ![PoisonIvory](ivory.jpg)
 > Dual License: ESOL v1.0 + GPLv3
 
@@ -215,6 +215,21 @@ PoisonIvory embodies three core principles:
 
 
 ## Changelog (Updates)
+
+v1.4.1
+[Fix]
+Bugs gefixt:
+
+log_suspicious_activity — source_ip sanitized gegen Log Injection
+vulnerability_assessment — target sanitized via re.sub vor File-Path-Nutzung (Path Injection)
+_generate_executive_summary — liest suspicious_activity jetzt unter self.lock
+renew_tor_circuit + manage_tor_circuits — beide auf with Controller.from_port(...) as controller umgestellt (kein Resource Leak mehr)
+
+Patterns gefixt:
+
+apikey_openai — auf sk-proj-* / sk-svcacct-* Format aktualisiert
+pqc_legacy_ecdsa — umbenannt von _weak_ auf _legacy_, Kommentar korrigiert (P-256 ist klassisch sound, nur quantum-vulnerable)
+social_phishing, social_captcha, social_click_continue — entfernt, mit Begründung im Kommentar
 
 ### v1.3.1 → v1.4.0 
 
