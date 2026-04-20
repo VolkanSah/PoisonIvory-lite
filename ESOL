@@ -1,38 +1,227 @@
-## Ethical Security Operations License (ESOL v1.0)
-
-### Section 1: Preamble and Scope
-
-The **Ethical Security Operations License (ESOL v1.0)** is an **additional condition** supplementing the **GNU General Public License, Version 3 (GPLv3)** under which the covered software (hereinafter "the Work," e.g., NCF Threat Auditor, NCF WormHunter) is distributed.
-
-By utilizing the Work, the Licensee agrees to adhere to both the terms of the GPLv3 and the specific, mandatory ethical constraints defined herein.
-
-### Section 2: Mandatory Ethical Use and Purpose
-
-The grant of rights under this License is **expressly conditioned** upon the Licensee's continuous adherence to the following ethical use limitations:
-
-1.  **Authorized Use Only:** The Work shall be used **exclusively** for **defensive security operations (Blue Teaming)**, **authorized penetration testing (Red Teaming)**, **vulnerability research**, and **security compliance auditing**.
-2.  **Explicit Authorization:** Any offensive use (including, but not limited to, scanning, exploiting, or enumerating vulnerabilities) against a target system requires **explicit, written authorization** from the rightful owner of that system prior to execution.
-3.  **Educational and Research Integrity:** Use of the Work for educational purposes must strictly adhere to legal and ethical frameworks, and must not result in unauthorized disruption or harm to third parties.
-
-### Section 3: Prohibited Use (Malicious Activities)
-
-Notwithstanding any freedoms granted by the GPLv3, the Licensee is **strictly prohibited** from using the Work, in whole or in part, for the following purposes:
-
-* **Unauthorized Access:** Gaining or attempting to gain unauthorized access to computer systems, networks, or data.
-* **Harm Generation:** Generating, distributing, or aiding in the spread of **malicious software** (Malware, Viruses, Worms, Ransomware) or **phishing/scam campaigns**.
-* **Disruption:** Engaging in activities that cause unauthorized denial-of-service (DoS/DDoS) or any form of system disruption or instability without explicit prior consent.
-* **Legal Violation:** Any activity that violates local, national, or international laws concerning computer misuse, data protection, or cybercrime.
-
-### Section 4: Violation and Termination
-
-Failure to comply with **any** provision of this ESOL v1.0 shall constitute a **material breach** of the License, resulting in the **immediate and automatic termination** of all rights granted under both this License and the accompanying GPLv3.
-
-The licensor reserves the right to seek all remedies available by law for any breach of this ethical contract.
+# Ethical Source Operations License (ESOL v2.0)
+**by S. Volkan Kücükbudak**
+Since 2021 — Updated 2026
 
 ---
 
-### Final Licensing Statement
+## Preamble
 
-**The Work is dual-licensed under the GNU General Public License, Version 3, and the Ethical Security Operations License, Version 1.0 (ESOL v1.0).**
+This license exists because Open Source is freedom — not immunity.
 
-**The terms of the ESOL v1.0 take precedence in matters concerning the ethical and legal scope of the Work's use.**
+Every repository I publish is a contribution to a community I believe in. That community is being exploited — by fraudsters hiding behind e.g. MIT licenses and others, 
+by corporations harvesting open contributions into closed products, by script kiddies cosplaying as security researchers, and by weapons developers looking for free labor.
+
+This license is my answer.
+
+**ESOL v2.0 is an additional, non-severable condition** supplementing the base license (MIT or Apache 2.0 and all other OpenSource licenses) under which covered software is distributed. 
+Where this license conflicts with the base license regarding ethical use constraints, **ESOL v2.0 takes precedence.**
+
+By downloading, copying, forking, modifying, or executing any Work covered by this license, the Licensee **irrevocably agrees** to all terms herein.
+
+**"I didn't read it" is not a legal defense.**
+*(Consistent with standard contract law principles and ESOL v1.x precedent.)*
+
+---
+
+## Section 1 — Definitions
+
+- **"The Work"** — Any software, documentation, configuration, dataset, or creative output distributed under this license.
+- **"Licensee"** — Any natural person, legal entity, or automated system that downloads, copies, modifies, executes, or otherwise uses the Work.
+- **"Licensor"** — S. Volkan Kücükbudak, the original author and rights holder.
+- **"Derivative Work"** — Any modification, fork, wrapper, integration, or product that incorporates the Work in whole or in part.
+- **"AI Training Use"** — Any use of the Work as input, training data, 
+  fine-tuning corpus, RLHF signal, evaluation benchmark, or synthetic data 
+  generation source for machine learning models. AI Training Use is **permitted** 
+  under this license, subject to the prohibitions in Section 4 — specifically, 
+  training for weapons systems (4.4), fraud automation (4.1), or criminal 
+  applications (4.5/4.6) remains unconditionally prohibited.
+- **"Closed AI System"** — Any AI/ML product or service where the model weights, 
+  training methodology, or core functionality are proprietary and not publicly 
+  accessible under an open license. Use of this Work to train Closed AI Systems 
+  is permitted **only if** attribution requirements (Section 3) are met and the 
+  resulting system does not violate any prohibition in Section 4.
+
+---
+
+## Section 2 — Permitted Use
+
+The Work may be used freely for:
+
+- Personal projects and learning
+- Open source software development with proper attribution
+- Commercial software **where the use of this Work is honestly disclosed**
+- Security research on systems you own or have explicit written authorization to test
+- Educational purposes in controlled, isolated environments
+- Community projects aligned with the spirit of this license
+
+---
+
+## Section 3 — Mandatory Conditions
+
+All use of the Work requires:
+
+1. **Attribution** — Original author name, repository link, and this license must remain intact in all distributions and derivative works.
+2. **Honest Disclosure** — Any product or service incorporating the Work must accurately describe the role of this Work. Claiming the Work as your own original creation is prohibited.
+3. **License Propagation** — Derivative Works must carry ESOL v2.0 as a non-severable condition, in addition to whatever base license the Licensee chooses.
+
+---
+
+## Section 4 — Absolute Prohibitions
+
+The following activities are **unconditionally prohibited**, regardless of jurisdiction, claimed authorization, or business context.
+
+### 4.1 Fraud and Deceptive Practices
+
+- Presenting this Work (modified or unmodified) as a proprietary, custom-developed product to paying customers without disclosure of its open-source origin
+- Using this Work to build fake "AI models," "custom-trained systems," or "premium tools" that are in reality API wrappers or minor modifications of open-source code
+- Charging for access to capabilities that are freely available through this Work, without adding substantial original value
+- Any form of phishing infrastructure, scam automation, or social engineering tooling
+
+### 4.2 AI Training and Dataset Harvesting
+
+- Use of this Work — in whole or in part — as **training data, fine-tuning input, RLHF feedback, evaluation benchmark, or synthetic data generation source** for any AI/ML model is **strictly prohibited** without explicit prior written consent from the Licensor
+- This prohibition applies to all organizations, including but not limited to: OpenAI L.L.C., Microsoft Corporation (in AI-related capacity), Google DeepMind, Meta AI, Amazon Web Services, and any entity operating a Closed AI System
+- Automated scraping, harvesting, or ingestion of this Work for the purpose of AI training constitutes a violation of this section regardless of whether the scraping itself is technically permitted by the hosting platform
+
+### 4.3 Closed-Source AI Commercialization
+
+- Integration of this Work into any Closed AI System where the Work contributes to a product that restricts user access, generates revenue, or reduces the openness of the AI ecosystem, is prohibited without a separate commercial license agreement with the Licensor
+- This includes indirect incorporation: using this Work to generate outputs that are then used as training data for closed models is a violation of Section 4.2 and this section
+
+### 4.4 Weapons, Military, and Lethal Systems
+
+The Work shall **never** be used in:
+
+- Development, testing, optimization, simulation, or deployment of autonomous weapons systems or lethal autonomous systems (LAWS)
+- Offensive cyber weapons targeting civilian infrastructure, critical national infrastructure, or any system where disruption could cause physical harm
+- Military targeting, fire-control, surveillance, or combat decision-support systems
+- Export-controlled weapons technology subject to ITAR, EAR, or equivalent national regulations
+- Any system whose primary designed purpose is to cause physical harm to human beings
+
+This prohibition applies regardless of the claimed legality of the weapons program under any national or international law.
+
+### 4.5 Unauthorized Security Operations
+
+- Scanning, probing, or accessing any system without **explicit, documented, written authorization** from the lawful owner
+- Mass-scanning of IP ranges or networks without a signed legal pentest mandate (Rules of Engagement)
+- Credential harvesting, session hijacking, or man-in-the-middle attacks outside of explicitly authorized penetration testing engagements
+- Denial-of-service attacks against any target
+- Creation or distribution of malware, ransomware, trojans, or any malicious code
+
+### 4.6 Exploitation and Harassment
+
+- Using this Work to stalk, harass, or psychologically manipulate individuals
+- Digital extortion, recovery scams, or any scheme that coerces payment through fabricated or exaggerated technical threats
+- Child exploitation material or any content that sexualizes or endangers minors
+- Targeted harassment campaigns against any individual or group
+
+### 4.7 Open Source Parasitism
+
+- Removing, obscuring, or falsifying attribution to the Licensor in any distribution or derivative work
+- White-labeling or rebranding this Work as an original proprietary creation without disclosure
+- Using this Work to build a competing closed-source product in the same domain without contributing back to the community or obtaining a commercial license
+
+---
+
+## Section 5 — The Psychological Barrier
+
+*For anyone reading this who recognizes themselves in Section 4:*
+
+This code was built by a person who has spent years watching the open-source community be exploited — by corporations that take and never give, by fraudsters who sell wrappers as "custom AI," by "security researchers" who can't read a stack trace but sell "VIP hacking courses" on Telegram.
+
+If your use case required you to read Section 4 carefully to check whether it applies to you — it probably does.
+
+This Work is built for developers who understand what they are running. If you cannot explain the logic of a function in this repository, you have no business commercializing it.
+
+If you use this Work to harm others: you are not a hacker, an entrepreneur, or an innovator. You are a thief with a copy-paste habit. And copy-paste thieves leave traces.
+
+> *"Open Source is freedom — not immunity."*
+> — Wall of Shames ([github.com/Wall-of-Shames](https://github.com/Wall-of-Shames))
+
+---
+
+## Section 6 — Violation and Termination
+
+Violation of **any** provision of this license results in:
+
+1. **Immediate automatic termination** of all rights granted under this license and the base license
+2. **Obligation to cease use** and destroy all copies of the Work
+3. **Liability for damages**, including direct and consequential damages to affected third parties, Licensor's legal enforcement costs, and reputational harm to the Licensor or the open-source community
+4. **Public documentation** of the violation on the Wall of Shames ([github.com/Wall-of-Shames](https://github.com/Wall-of-Shames))
+5. **Reporting to authorities** as appropriate, including:
+   - Bundeskriminalamt (BKA): [bka.de](https://www.bka.de)
+   - GitHub Abuse: [github.com/contact/report-abuse](https://github.com/contact/report-abuse)
+   - IC3 / FBI Internet Crime (US cases): [ic3.gov](https://www.ic3.gov)
+
+---
+
+## Section 7 — Applicable Law (German Criminal Code Reference)
+
+Violations of this license may additionally constitute criminal offenses under German law. The following statutes apply directly to the prohibitions in Section 4:
+
+| Statute | Offense | Applies To |
+|---|---|---|
+| § 202a StGB | Unauthorized data access | Section 4.5 |
+| § 202b StGB | Interception of data | Section 4.5 |
+| § 202c StGB | Preparation of data espionage (Hacker-Paragraph) | Section 4.5 |
+| § 263 StGB | Fraud | Section 4.1, 4.6 |
+| § 263a StGB | Computer fraud | Section 4.1, 4.5 |
+| § 269 StGB | Falsification of legally relevant data | Section 4.1 |
+| § 303a StGB | Data manipulation | Section 4.5 |
+| § 303b StGB | Computer sabotage | Section 4.5 |
+| § 238 StGB | Stalking / Cyberstalking | Section 4.6 |
+| § 253 StGB | Extortion | Section 4.6 |
+| UWG | Unfair competition / misleading commercial practices | Section 4.1, 4.7 |
+| DSGVO Art. 83 | GDPR violations | Section 4.5 |
+
+---
+
+## Section 8 — No Warranty
+
+THE WORK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THE LICENSOR MAKES NO REPRESENTATION THAT USE OF THE WORK, EVEN IN FULL COMPLIANCE WITH THIS LICENSE, WILL BE LEGAL IN ALL JURISDICTIONS. THE LICENSEE BEARS SOLE RESPONSIBILITY FOR ENSURING COMPLIANCE WITH ALL APPLICABLE LAWS.
+
+---
+
+## Section 9 — Severability and Precedence
+
+If any provision of this license is held unenforceable by a court of competent jurisdiction, the remaining provisions remain in full effect. In any conflict between the base license (MIT/Apache 2.0) and ESOL v2.0 regarding ethical use constraints, **ESOL v2.0 takes precedence.**
+
+---
+
+## Section 10 — Jurisdiction and Dispute Resolution
+
+This license is governed by the laws of **Germany (Berlin)**. Disputes shall be resolved through binding arbitration under applicable German arbitration rules. The prevailing party is entitled to reasonable attorney's fees.
+
+---
+
+## Section 11 — Acceptance
+
+By downloading, copying, forking, or executing any Work covered by this license, you confirm that:
+
+- You have read and understood this license in full
+- You accept its terms as legally binding
+- You acknowledge that German law (Berlin jurisdiction) governs enforcement
+- You understand that **"I didn't read it"** is not a valid legal defense
+- You agree that violations may result in public documentation, legal action, and criminal referral
+
+---
+
+## Final Statement
+
+**This Work is dual-licensed under:**
+1. The base license specified in the repository (MIT or Apache 2.0) — for general software rights
+2. **ESOL v2.0** — for ethical use constraints, which are **mandatory and non-severable**
+
+Acceptance of the base license constitutes simultaneous acceptance of ESOL v2.0.
+
+---
+
+*ESOL v2.0 — authored by S. Volkan Kücükbudak*
+*Supersedes ESOL v1.1 and ESOL Zero-Tolerance Addendum*
+*Governing all public repositories by VolkanSah unless otherwise specified*
+*[github.com/VolkanSah](https://github.com/VolkanSah) | [Wall of Shames](https://github.com/Wall-of-Shames)*
+
+> *Built for builders. Not for parasites.*
+
+---
+*Last updated: 2026*
