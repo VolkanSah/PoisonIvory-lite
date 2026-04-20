@@ -2,7 +2,9 @@
 
 ###### Version 1.4.1 - Codename: "Nemesis Reborn" - Security Patterns v.2026
 
-> Dual License: ESOL v1.0 + GPLv3
+![PoisonIvory](ivory.jpg)
+
+> Dual License: ESOL v2.0 + GPLv3
 
 ### Advanced Security & Threat Monitoring (DIY)
 
